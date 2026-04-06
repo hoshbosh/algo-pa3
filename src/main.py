@@ -1,7 +1,8 @@
 import sys
+import time
 
 def load_file(filename):
-    with open(filename, "r") as file:
+    with open(f"output/{filename}", "r") as file:
         k = int(file.readline().strip())
         inv = {}
         for x in range(k):
@@ -47,5 +48,7 @@ def solve(filename):
     print(result)
 
 if __name__ == "__main__":
+    start = time.time()
     solve(sys.argv[1])
-
+    elapsed = time.time() - start
+    print(f"Time: {elapsed:.4f}s")
