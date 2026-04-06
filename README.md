@@ -2,6 +2,29 @@
 - Name: Joshua Labasbas
 - UFID: 37663960
 
+# Usage
+From root run 
+```
+python src/input-gen.py [length of alphabet] [length of strings] [input file name]
+```
+for example:
+```
+python src/input-gen.py 26 50 out.in
+```
+
+
+Then to run the HVLCS solver run:
+```
+python src/main.py [input file name]
+```
+Using the same example:
+```
+python src/main.py out.in
+```
+
+All generated input files are put into data, and main.py will look for the given filename
+in the data folder
+
 # Question 1
 ![Graph](./images/graph.png)
 
