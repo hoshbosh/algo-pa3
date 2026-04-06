@@ -2,7 +2,7 @@ import sys
 import time
 
 def load_file(filename):
-    with open(f"output/{filename}", "r") as file:
+    with open(f"data/{filename}", "r") as file:
         k = int(file.readline().strip())
         inv = {}
         for x in range(k):
