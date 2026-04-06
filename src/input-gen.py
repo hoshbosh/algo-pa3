@@ -20,7 +20,7 @@ def add_answer(answer, chars, length):
 
 def generate(k, string_length, name):
 
-    with open(name, "w") as file:
+    with open(f"output/{name}", "w") as file:
         file.write(f"{k}\n")
         inv = []
         inv_vals = []
